@@ -1,0 +1,7 @@
+{{ with .Params.hide_footer }}
+  <!-- no footer her -->
+{{ else }}
+<footer>
+    website made by {{ .Site.Params.name }} in {{ now.Year }}
+</footer>
+{{ end }}
